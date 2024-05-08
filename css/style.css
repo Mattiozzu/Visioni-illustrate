@@ -1,0 +1,351 @@
+body {
+    margin: 0;
+    font-family: "DM Serif Text";
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header{
+    position:absolute;
+    top: 0;
+    margin: auto;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 2;
+    color: white;
+}
+
+footer{
+    display: flex;
+    margin:auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px; 
+    padding-bottom: 24px ;
+    color: #363636;
+    list-style-type: none;
+}
+
+footer a {
+text-decoration: none;
+color: #363636;
+}
+
+footer a:hover {
+ text-decoration: underline;
+}
+
+.container_header{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px; 
+    padding-bottom: 24px ;
+}
+
+.container_header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+}
+
+.container_header a:hover{
+    text-decoration: underline;
+    color:#fff
+}
+
+.testohero h2, .testohero_infomostra h2, .testohero_infoutili h2, .testohero_artisti h2{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+ul{
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    gap: 36px;
+}
+
+.hero{
+    height: 925px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+main h2 {
+    font-size: 55px;
+    margin: 100px 0 25px 0 ;
+    color: #363636;
+}
+
+main p {
+font-size: 22px;
+margin: 0 0 100px 0;
+color: #363636;
+}
+
+.info_mostra, .info_utili, .laboratorio_bambini, .adrian_johnson{
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.info_mostra p, .info_utili p, .laboratorio_bambini p, .adrian_johnson p{
+    font-size: 22px;
+    margin: 0 0 50px 0;
+    color: #363636;
+}
+
+.testohero, .testohero_infomostra, .testohero_infoutili, .testohero_artisti{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    color:#fff;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: end;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+}
+.testohero_infomostra h2, .testohero_infoutili h2, .testohero_artisti h2{
+    color: #fff;
+    margin: 0 0 0 0;
+}
+.paragrafo1{
+    max-width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+
+
+.item_ad{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width:800px;
+    margin: 48px auto;
+    gap: 20px;
+    padding: 8px;
+}
+
+.item_jj{
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    max-width:800px;
+    margin: 48px auto;
+    gap: 20px;
+    padding: 8px;
+}
+
+
+
+section.card_ad a img, .item_jj img{
+    height: 232px ;
+    width: 307px ;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.artisti{
+    max-width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+
+.item-artisti {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width:800px;
+    margin: 48px auto;
+    gap: 50px;
+    padding: 20px;
+    
+}
+
+.card-artisti img {
+    height: 250px ;
+    width: 100% ;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-artisti p {
+    margin: 5px 0 5px 0 ;
+    font-size: 16px;
+    color:#363636;
+    max-width: 160px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.card-artisti {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #EDEDED;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-trigger{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 15px;
+    filter: brightness(100%);
+    transition: 0.3s;
+}
+
+.modal-trigger:hover{
+    filter: brightness(75%);
+}
+
+
+.modal:target {
+    display: block;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    animation-duration: 0.6s;
+}
+
+.close {
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.close:hover {
+    color: #4b4b4b;
+}
+
+@media (max-width:767px) {
+
+    .informazioni{
+        margin: 40px;
+    }
+    
+    h1 {
+    font-size: 25px;
+    }
+
+    div.paragrafo1 h2, .artisti h2, .info_utili h2, .laboratorio_bambini h2, .info_mostra h2, .artisti h2, .adrian_johnson h2 {
+
+        font-size: 45px;
+    }
+
+    .paragrafo1 p, .info_utili p, .laboratorio_bambini p, .info_mostra p, .artisti p, .adrian_johnson p {
+        font-size: 20px;
+    }
+
+    .info_mostra{
+        margin: auto;
+    }
+
+    .item-artisti{
+        grid-template-columns:  1fr;
+        gap: 8px;
+        margin: 8px auto;
+        width: 300px ;
+        height: 100%;
+    }
+
+    .item_ad, .item_jj{
+        grid-template-columns:  1fr;
+        gap: 8px;
+        margin: 8px auto;
+        width: 300px;
+        height: 100%;
+    }
+
+    .card-artisti, .card_ad, .card_jj{
+        margin: auto;
+    }
+
+    .google_maps {
+     height: 300px;
+     width: 400px;
+     margin: auto;
+    }
+
+    .card-artisti img{
+        height: 300px;
+        width: 100%;
+    }
+    section.card_jj {
+        grid-template-columns:  repeat(3, 150px);
+        gap: 8px;
+        padding: 0 4px;
+    }
+
+    section.card_ad {
+        grid-template-columns:  repeat(auto-fill, minmax(150px, 4fr));
+        gap: 8px;
+        padding: 0 4px;
+    }
+
+    header{
+        flex-direction: row;
+        gap: 16px;
+    } 
+    
+    section.card_ad img {
+        max-width: auto;
+      }
+
+      section.card_jj img {
+        max-width: auto;
+      }
+}
