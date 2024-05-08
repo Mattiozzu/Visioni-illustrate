@@ -56,6 +56,10 @@ footer a:hover {
     padding-bottom: 24px ;
 }
 
+.container_header h1, footer h1 {
+    font-size: 25px;
+}
+
 .container_header a{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -277,8 +281,19 @@ section.card_ad a img, .item_jj img{
         margin: 40px;
     }
     
-    h1 {
-    font-size: 25px;
+    footer h1 {
+    font-size: 15px;
+    }
+    footer a {
+    font-size: 12px;
+    }
+    
+    .container_header h1 {
+        font-size: 15px;
+    }
+
+    .container_header a {
+        font-size: 12px;
     }
 
     div.paragrafo1 h2, .artisti h2, .info_utili h2, .laboratorio_bambini h2, .info_mostra h2, .artisti h2, .adrian_johnson h2 {
