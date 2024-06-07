@@ -331,13 +331,16 @@ section.card_ad a img, .item_jj img{
 
     .google_maps {
      height: 300px;
-     width: 400px;
-     margin: auto;
+     width: auto;
+     display: flex;
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
     }
 
     .card-artisti img{
         height: 300px;
-        width: 100%;
+        width: auto;
     }
     section.card_jj {
         grid-template-columns:  repeat(3, 150px);
